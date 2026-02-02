@@ -121,10 +121,9 @@ elif menu == "STEM Data Explorer":
     st.write(f"Filtered Results for Wt (percentage)Range {Wtpercentage_filter}:")
     st.dataframe(filtered_Chemistry)
      
-    if data_option ==("Astronomy Observations"):
-     elif data_option == "Astronomy Observations":
+    if data_option == ("Astronomy Observations"):
        st.write("### Astronomy Observation Data")
-       st.dataframe(astronomy_data):
+       st.dataframe(astronomy_data)
         
     # Add widget to filter by Brightness
     brightness_filter = st.slider("Filter by Brightness (Magnitude)", -15.0, 5.0, (-15.0, 5.0))
@@ -134,7 +133,7 @@ elif menu == "STEM Data Explorer":
     st.write(f"Filtered Results for Brightness Range {brightness_filter}:")
     st.dataframe(filtered_astronomy)
 
-    elif data_option == "Weather Data":
+    if data_option == "Weather Data":
         st.write("### Weather Data")
         st.dataframe(weather_data)
         # Add widgets to filter by temperature and humidity
