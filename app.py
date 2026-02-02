@@ -54,7 +54,7 @@ if menu == "Researcher Profile":
     st.write(f"**Reasearch_Title:** {research_title}")
     
     st.image(
-    "C:/Users/wphut/Downloads/Chemistry.jpg",
+    "Chemistry.jpg",
     caption="Chemistry"
 )
 
